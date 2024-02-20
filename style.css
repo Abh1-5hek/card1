@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: black;
+    overflow: hidden;
+}
+
+#block1{
+    height: 100%;
+    width: 30%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#gradient1{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgba(54, 57, 211, 0.174);
+    box-shadow: -5px -5px 80px rgba(54, 57, 211, 0.507);
+    position: absolute;
+    top: 18%;
+    left: -20%;
+ 
+   
+}
+#box1{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.054);
+    border: 2px inset rgba(25, 42, 228, 0.55);
+    border-right: none;
+    border-bottom: none;  
+    
+}
+#block1 img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top:32%
+}
+
+
+#block2{
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#gradient2{
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background-color: rgba(11, 201, 170, 0.169);
+    box-shadow: -5px -5px 80px rgba(15, 218, 190, 0.53);
+    position: absolute;
+    top: -20%;
+    left: 10%;  
+}
+#box2{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.054);
+    border: 2px inset rgba(7, 205, 102, 0.55);
+    border-right: none;
+    border-bottom: none;  
+    transform: rotate(40deg);
+    position: absolute;
+    top: 8%;
+}
+#block2 img{
+    height: 480px;
+    width: 480px;
+    position: absolute;
+    top: 14%;
+}
+
+#block3{
+    height: 100%;
+    width: 30%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#gradient3{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgba(223, 78, 16, 0.169);
+    box-shadow: -5px -5px 80px rgba(223, 78, 16, 0.53);
+    position: absolute;
+    top: 18%;
+    right: -10%;  
+}
+#box3{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.054);
+    border: 2px inset rgba(223, 78, 16, 0.55);
+    border-right: none;
+    border-bottom: none;  
+    transform: rotate(100deg);
+}
+#block3 img{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 32%;
+}
+
+@media screen and (max-width: 480px) {
+   #main{
+    overflow-y: auto;
+   }
+    #block1{
+        height: 100%;
+        width: 450px;
+    }
+    #block2{
+        height: 100%;
+        width: 470px;
+    }
+    #gradient2{
+        top: 22%; 
+        left: 14%;
+    }
+    #block3{
+        height: 100%;
+        width: 450px;
+    }
+  }
+  /* for tablet
+ @media screen and(min-width:920px){
+   
+ } */
+    
+ 
